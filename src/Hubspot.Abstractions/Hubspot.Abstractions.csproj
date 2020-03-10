@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Devpro.Hubspot.Abstractions</AssemblyName>
+    <RootNamespace>Devpro.Hubspot.Abstractions</RootNamespace>
+    <ProjectGuid>{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}</ProjectGuid>
+    <Authors>devprofr</Authors>
+    <Description>A package that provides high level abstractions to Yanport services.</Description>
+    <RepositoryUrl>https://github.com/devpro/hubspot-dotnet</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/devpro/hubspot-dotnet</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Withywoods.Serialization" Version="1.2.4" />
+  </ItemGroup>
+
+</Project>
