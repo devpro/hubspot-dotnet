@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hubspot.Abstractions", "src\Hubspot.Abstractions\Hubspot.Abstractions.csproj", "{5C225B1B-F6C1-4D10-8FF1-16B3B9C79C32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hubspot.Abstractions", "src\Hubspot.Abstractions\Hubspot.Abstractions.csproj", "{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{212256C1-F6B3-4938-9D8A-5259C8EE5E53}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,15 +11,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		.azure\pipelines\ci.yml = .azure\pipelines\ci.yml
 		Directory.Build.props = Directory.Build.props
+		Local.runsettings = Local.runsettings
 		.azure\pipelines\pkg.yml = .azure\pipelines\pkg.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hubspot.Client", "src\Hubspot.Client\Hubspot.Client.csproj", "{A05B9FC5-E543-4492-91ED-37F7CE8DD9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hubspot.Client", "src\Hubspot.Client\Hubspot.Client.csproj", "{CD7EFE51-CCA3-4516-B8FF-2052DACD5B04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hubspot.Client.UnitTests", "test\Hubspot.Client.UnitTests\Hubspot.Client.UnitTests.csproj", "{2E2D9D45-17D1-4448-841B-F26D89DE8E13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hubspot.Client.UnitTests", "test\Hubspot.Client.UnitTests\Hubspot.Client.UnitTests.csproj", "{69D4EBD6-327E-4E15-A6B2-2D1AAB7D5C93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hubspot.Client.IntegrationTests", "test\Hubspot.Client.IntegrationTests\Hubspot.Client.IntegrationTests.csproj", "{C7EE0F0C-0A1B-4563-8978-227AF440177F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hubspot.Client.IntegrationTests", "test\Hubspot.Client.IntegrationTests\Hubspot.Client.IntegrationTests.csproj", "{044C3278-2662-4E83-8F4C-AA142EC8BFF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,22 +28,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C225B1B-F6C1-4D10-8FF1-16B3B9C79C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C225B1B-F6C1-4D10-8FF1-16B3B9C79C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C225B1B-F6C1-4D10-8FF1-16B3B9C79C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C225B1B-F6C1-4D10-8FF1-16B3B9C79C32}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A05B9FC5-E543-4492-91ED-37F7CE8DD9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A05B9FC5-E543-4492-91ED-37F7CE8DD9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A05B9FC5-E543-4492-91ED-37F7CE8DD9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A05B9FC5-E543-4492-91ED-37F7CE8DD9FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E2D9D45-17D1-4448-841B-F26D89DE8E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E2D9D45-17D1-4448-841B-F26D89DE8E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E2D9D45-17D1-4448-841B-F26D89DE8E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E2D9D45-17D1-4448-841B-F26D89DE8E13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7EE0F0C-0A1B-4563-8978-227AF440177F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7EE0F0C-0A1B-4563-8978-227AF440177F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7EE0F0C-0A1B-4563-8978-227AF440177F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7EE0F0C-0A1B-4563-8978-227AF440177F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7EFE51-CCA3-4516-B8FF-2052DACD5B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7EFE51-CCA3-4516-B8FF-2052DACD5B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7EFE51-CCA3-4516-B8FF-2052DACD5B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7EFE51-CCA3-4516-B8FF-2052DACD5B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D4EBD6-327E-4E15-A6B2-2D1AAB7D5C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D4EBD6-327E-4E15-A6B2-2D1AAB7D5C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D4EBD6-327E-4E15-A6B2-2D1AAB7D5C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D4EBD6-327E-4E15-A6B2-2D1AAB7D5C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044C3278-2662-4E83-8F4C-AA142EC8BFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044C3278-2662-4E83-8F4C-AA142EC8BFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044C3278-2662-4E83-8F4C-AA142EC8BFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044C3278-2662-4E83-8F4C-AA142EC8BFF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
