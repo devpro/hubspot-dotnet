@@ -14,7 +14,7 @@ namespace Devpro.Hubspot.Client.IntegrationTests.Sandbox
     public class ContactRepositorySandboxIntegrationTest : RepositoryIntegrationTestBase<SandboxHubspotClientConfiguration>
     {
         public ContactRepositorySandboxIntegrationTest()
-            : base(new SandboxHubspotClientConfiguration())
+            : base(new SandboxHubspotClientConfiguration { UseOAuth = false })
         {
         }
 

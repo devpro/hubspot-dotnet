@@ -19,7 +19,7 @@ namespace Devpro.Hubspot.Client.UnitTests.Repositories
             TokenProviderMock = new Mock<ITokenProvider>();
         }
 
-        protected IHubspotClientConfiguration Configuration { get; }
+        protected DefaultHubspotClientConfiguration Configuration { get; }
 
         protected Fixture Fixture { get; }
 

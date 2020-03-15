@@ -30,7 +30,7 @@ namespace Devpro.Hubspot.Client.DependencyInjection
             }
 
             services.TryAddSingleton<IHubspotClientConfiguration>(configuration);
-            services.TryAddSingleton<Abstractions.Providers.ITokenProvider, Providers.TokenProvider>();
+            services.TryAddScoped<Abstractions.Providers.ITokenProvider, Providers.TokenProvider>();
             services.TryAddTransient<Abstractions.Repositories.IContactRepository, Repositories.ContactRepository>();
             services.TryAddTransient<Abstractions.Repositories.ITokenRepository, Repositories.TokenRepository>();
 

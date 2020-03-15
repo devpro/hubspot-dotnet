@@ -38,7 +38,7 @@ namespace Devpro.Hubspot.Client.UnitTests.DependencyInjection
         }
 
         [Fact]
-        public void AddTwohireClient_ShouldProvideProviders()
+        public void AddHubspotClient_ShouldProvideProviders()
         {
             // Arrange
             var serviceCollection = new ServiceCollection();

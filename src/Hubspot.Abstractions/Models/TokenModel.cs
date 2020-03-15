@@ -24,5 +24,11 @@ namespace Devpro.Hubspot.Abstractions.Models
         /// </summary>
         [IgnoreDataMember]
         public DateTime ExpiredAt { get; set; }
+
+        /// <summary>
+        /// Created DateTime (UTC).
+        /// </summary>
+        [IgnoreDataMember]
+        public DateTime CreatedAt { get; set; }
     }
 }

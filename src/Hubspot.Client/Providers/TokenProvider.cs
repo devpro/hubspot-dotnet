@@ -7,9 +7,9 @@ namespace Devpro.Hubspot.Client.Providers
 {
     public class TokenProvider : ITokenProvider
     {
-        private readonly ITokenRepository _tokenRepository;
-
         private readonly ILogger<TokenProvider> _logger;
+
+        private readonly ITokenRepository _tokenRepository;
 
         private string _tokenValue;
 
@@ -21,6 +21,8 @@ namespace Devpro.Hubspot.Client.Providers
             _tokenRepository = tokenRepository;
         }
 
+        public string AuthorizationCode { get; set; }
+
         public string Token
         {
             get
@@ -28,7 +30,7 @@ namespace Devpro.Hubspot.Client.Providers
                 var now = DateTime.Now;
                 if (_tokenValue == null || _expirationTime <= now)
                 {
-                    var tokenDto = _tokenRepository.CreateAsync().GetAwaiter().GetResult();
+                    var tokenDto = _tokenRepository.CreateAsync(AuthorizationCode).GetAwaiter().GetResult();
                     _tokenValue = tokenDto.AccessToken;
                     _expirationTime = tokenDto.ExpiredAt;
                     _logger.LogDebug("New token generated");

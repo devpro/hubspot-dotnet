@@ -1,0 +1,36 @@
+﻿@model UserViewModel
+@{
+  ViewData["Title"] = "User Page";
+}
+
+<div class="text-center">
+  <h1 class="display-4">Welcome</h1>
+</div>
+
+<h2>Contact list</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        First name
+      </th>
+      <th>
+        Last name
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var contact in Model.Contacts)
+    {
+      <tr>
+        <td>
+          @Html.DisplayFor(modelItem => contact.Properties.FirstName.Value)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => contact.Properties.LastName.Value)
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

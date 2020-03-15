@@ -13,7 +13,7 @@
 
         /// <summary>
         /// Use OAuth to authenticate HubSpot API requests?
-        /// If true, the following fields must be defined: ApplicationId, ClientId, ClientSecret, OAuthUrl.
+        /// If true, the following fields must be defined: ApplicationId, ClientId, ClientSecret, RedirectUrl.
         /// If false, the following field must be defined: ApiKey.
         /// </summary>
         public bool UseOAuth { get; }
@@ -39,9 +39,9 @@
         public string ClientSecret { get; }
 
         /// <summary>
-        /// HubSpot OAuth URL.
+        /// HubSpot Application Redirect URL.
         /// </summary>
-        public string OAuthUrl { get; }
+        public string RedirectUrl { get; }
 
         /// <summary>
         /// HTTP client name, this is a pure technical name, free text only used internally in the application.

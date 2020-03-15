@@ -5,6 +5,6 @@ namespace Devpro.Hubspot.Abstractions.Repositories
 {
     public interface ITokenRepository
     {
-        Task<TokenModel> CreateAsync();
+        Task<TokenModel> CreateAsync(string authorizationCode);
     }
 }

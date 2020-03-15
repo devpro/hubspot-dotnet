@@ -1,5 +1,7 @@
-﻿using System.Net.Http;
+﻿using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
+using Devpro.Hubspot.Abstractions.Models;
 using Devpro.Hubspot.Abstractions.Providers;
 using Devpro.Hubspot.Abstractions.Repositories;
 using Microsoft.Extensions.Logging;
@@ -24,11 +26,12 @@ namespace Devpro.Hubspot.Client.Repositories
         /// </summary>
         /// <returns></returns>
         /// <remarks>https://developers.hubspot.com/docs/methods/contacts/get_contacts</remarks>
-        public async Task<object> FindAllAsync()
+        /// <param name="authorizationCode">Authorization code, mandatory if OAuth enabled</param>
+        public async Task<List<ContactModel>> FindAllAsync()
         {
             var url = GenerateUrl();
-            var output = await GetAsync<object>(url);
-            return output;
+            var output = await GetAsync<ContactResultModel>(url);
+            return output.Contacts;
         }
     }
 }

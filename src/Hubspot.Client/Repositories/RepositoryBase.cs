@@ -29,7 +29,7 @@ namespace Devpro.Hubspot.Client.Repositories
 
         protected string GenerateUrl(string prefix = "", string suffix = "", string arguments = "")
         {
-            if (Configuration.UseOAuth)
+            if (!Configuration.UseOAuth)
             {
                 arguments = string.IsNullOrEmpty(arguments) ? $"?hapikey={Configuration.ApiKey}" : $"{arguments}&hapikey={Configuration.ApiKey}";
             }

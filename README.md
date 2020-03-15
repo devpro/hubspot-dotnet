@@ -82,12 +82,11 @@ For integration tests, to manage the configuration (secrets) you can create a fi
   <RunConfiguration>
     <EnvironmentVariables>
       <Hubspot__Sandbox__BaseUrl>xxx</Hubspot__Sandbox__BaseUrl>
-      <Hubspot_Sandbox_UseOAuth>xxx</Hubspot_Sandbox_UseOAuth>
       <Hubspot__Sandbox__ApiKey>xxx</Hubspot__Sandbox__ApiKey>
       <Hubspot__Sandbox__ApplicationId>xxx</Hubspot__Sandbox__ApplicationId>
       <Hubspot__Sandbox__ClientId>xxx</Hubspot__Sandbox__ClientId>
       <Hubspot__Sandbox__ClientSecret>xxx</Hubspot__Sandbox__ClientSecret>
-      <Hubspot__Sandbox__OAuthUrl>xxx</Hubspot__Sandbox__OAuthUrl>
+      <Hubspot__Sandbox__RedirectUrl>xxx</Hubspot__Sandbox__RedirectUrl>
     </EnvironmentVariables>
   </RunConfiguration>
 </RunSettings>

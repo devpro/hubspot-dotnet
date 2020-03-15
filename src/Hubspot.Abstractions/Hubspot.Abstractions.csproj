@@ -6,7 +6,7 @@
     <RootNamespace>Devpro.Hubspot.Abstractions</RootNamespace>
     <ProjectGuid>{74B0B0EB-CFEC-4C60-BE5F-EECF9CA2DB1B}</ProjectGuid>
     <Authors>devprofr</Authors>
-    <Description>A package that provides high level abstractions to Yanport services.</Description>
+    <Description>A package that provides high level abstractions to HubSpot services.</Description>
     <RepositoryUrl>https://github.com/devpro/hubspot-dotnet</RepositoryUrl>
     <PackageProjectUrl>https://github.com/devpro/hubspot-dotnet</PackageProjectUrl>
   </PropertyGroup>

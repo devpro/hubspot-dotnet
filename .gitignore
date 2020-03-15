@@ -351,3 +351,4 @@ MigrationBackup/
 
 # Local debug files
 Local.runsettings
+appsettings.Development.json
