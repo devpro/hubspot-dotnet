@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTest</AssemblyName>
+    <RootNamespace>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTest</RootNamespace>
+    <ProjectGuid>{0A6A348B-987A-499C-BB01-FD549EF3C4F2}</ProjectGuid>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="80.0.3987.10600" />
+    <PackageReference Include="Withywoods.Selenium" Version="1.2.6" />
+    <PackageReference Include="Withywoods.WebTesting" Version="1.2.6" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\samples\AspNetCoreMvcWebApp\AspNetCoreMvcWebApp.csproj" />
+  </ItemGroup>
+
+</Project>
