@@ -7,13 +7,13 @@ using Xunit;
 namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests.Localhost
 {
     [Trait("Environment", "Localhost")]
-    public class SmokeTest : SeleniumTestBase, IClassFixture<LocalServerFactory<Startup>>
+    public class SwaggerPageTest : SeleniumTestBase, IClassFixture<LocalServerFactory<Startup>>
     {
         private const string ResourceEndpoint = "swagger";
 
         private readonly LocalServerFactory<Startup> _server;
 
-        public SmokeTest(LocalServerFactory<Startup> server)
+        public SwaggerPageTest(LocalServerFactory<Startup> server)
             : base(isHeadless: false)
         {
             _server = server;
@@ -21,7 +21,7 @@ namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests.Localhost
         }
 
         [Fact]
-        public void AspNetCoreMvcWebAppSample_SmokeTest01()
+        public void AspNetCoreMvcWebAppSample_SwaggerPageExists()
         {
             _server.RootUri.Should().Be("https://localhost:5001");
 
@@ -35,11 +35,11 @@ namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests.Localhost
                 WebDriver.Title.Should().Be("Swagger UI");
                 WebDriver.FindElementByClassName("title").Text.Should().Contain("Devpro HubSpot ASP.NET MVC Sample Web App");
 
-                TakeScreenShot(nameof(AspNetCoreMvcWebAppSample_SmokeTest01));
+                TakeScreenShot(nameof(AspNetCoreMvcWebAppSample_SwaggerPageExists));
             }
             catch
             {
-                TakeScreenShot(nameof(AspNetCoreMvcWebAppSample_SmokeTest01));
+                TakeScreenShot(nameof(AspNetCoreMvcWebAppSample_SwaggerPageExists));
                 throw;
             }
         }
