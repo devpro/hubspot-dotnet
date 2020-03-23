@@ -1,8 +1,7 @@
 ﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.Models;
 using Devpro.Hubspot.Abstractions.Providers;
-using System;
+using Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.Controllers
 {
