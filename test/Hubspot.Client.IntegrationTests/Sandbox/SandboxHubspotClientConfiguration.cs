@@ -21,7 +21,5 @@ namespace Devpro.Hubspot.Client.IntegrationTests.Sandbox
         public string RedirectUrl => Environment.GetEnvironmentVariable("Hubspot__Sandbox_RedirectUrl");
 
         public string HttpClientName => "Hubspot";
-
-        public string UserAuthorizationCode => Environment.GetEnvironmentVariable("Hubspot__Sandbox__UserAuthorizationCode");
     }
 }
