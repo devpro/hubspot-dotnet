@@ -4,7 +4,7 @@ using Withywoods.Selenium;
 using Withywoods.WebTesting.TestHost;
 using Xunit;
 
-namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTest.Localhost
+namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests.Localhost
 {
     [Trait("Environment", "Localhost")]
     public class SmokeTest : SeleniumTestBase, IClassFixture<LocalServerFactory<Startup>>

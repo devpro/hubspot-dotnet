@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTest</AssemblyName>
-    <RootNamespace>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTest</RootNamespace>
+    <AssemblyName>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests</AssemblyName>
+    <RootNamespace>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests</RootNamespace>
     <ProjectGuid>{0A6A348B-987A-499C-BB01-FD549EF3C4F2}</ProjectGuid>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
