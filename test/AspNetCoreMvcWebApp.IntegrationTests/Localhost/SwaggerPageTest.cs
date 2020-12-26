@@ -14,7 +14,7 @@ namespace Devpro.Hubspot.Samples.AspNetCoreMvcWebApp.IntegrationTests.Localhost
         private readonly LocalServerFactory<Startup> _server;
 
         public SwaggerPageTest(LocalServerFactory<Startup> server)
-            : base(isHeadless: false)
+            : base(new WebDriverOptions { IsHeadless = false })
         {
             _server = server;
             _ = _server.CreateClient(); // this call is needed to change state of server

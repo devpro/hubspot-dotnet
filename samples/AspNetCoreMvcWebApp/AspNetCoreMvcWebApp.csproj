@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp</AssemblyName>
     <RootNamespace>Devpro.Hubspot.Samples.AspNetCoreMvcWebApp</RootNamespace>
     <ProjectGuid>{775ED164-5573-4489-9FB4-2D79D4B719FA}</ProjectGuid>
@@ -21,9 +21,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
-    <PackageReference Include="Withywoods.AspNetCore" Version="1.2.6" />
-    <PackageReference Include="Withywoods.Configuration" Version="1.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Withywoods.AspNetCore" Version="1.4.0" />
+    <PackageReference Include="Withywoods.Configuration" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
